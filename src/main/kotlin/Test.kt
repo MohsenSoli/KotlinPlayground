@@ -21,13 +21,19 @@ suspend fun massiveRun(action: suspend () -> Unit) {
     println("Completed ${n * k} actions in $time ms")
 }
 
-fun main() = runBlocking {
-    withContext(counterContext) {
-        massiveRun {
-            counter++
-        }
+fun main(): Unit = runBlocking {
+//    withContext(counterContext) {
+//        massiveRun {
+//            counter++
+//        }
+//    }
+//    println("Counter = $counter")
+    val x = generateSequence(5) {
+        it + 3
     }
-    println("Counter = $counter")
+        .takeWhile { it < 100 }
+        .onEach { println(it) }
+        .reduce { acc, i -> acc + i }
 }
 
 suspend fun x(): Int {
