@@ -1,3 +1,5 @@
+package kotlintricks
+
 class Class {
 
     companion object {
@@ -11,7 +13,7 @@ class Class {
         y + x + Static().yy
     }
 
-    val x :Int = 10
+    val x : Int = 10
 
     inner class Inner {
         val y = x

@@ -1,4 +1,5 @@
-import java.util.function.Function
+package functinal
+
 import java.util.logging.Level
 
 val <P1, P2, R> Function2<P1, P2, R>.curried: (P1) -> (P2) -> R

@@ -1,4 +1,4 @@
-
+package functinal
 
 tailrec fun loop(n: Int) {
     if (n < 0) return

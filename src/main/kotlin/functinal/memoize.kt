@@ -1,3 +1,5 @@
+package functinal
+
 import java.util.concurrent.ConcurrentHashMap
 
 fun <A, R> Function1<A, R>.memoized(): (A) -> R {

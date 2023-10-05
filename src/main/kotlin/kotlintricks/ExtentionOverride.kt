@@ -1,3 +1,5 @@
+package kotlintricks
+
 open class View
 open class Button : View()
 open class Text : View()

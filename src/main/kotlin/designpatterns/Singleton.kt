@@ -1,3 +1,5 @@
+package designpatterns
+
 import kotlin.concurrent.thread
 
 class Eager private constructor() {

@@ -1,4 +1,4 @@
-
+package kotlintricks
 class Logger<in T> {
     fun log(message: T) = println(message)
 }

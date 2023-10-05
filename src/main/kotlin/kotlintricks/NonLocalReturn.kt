@@ -1,4 +1,4 @@
-
+package kotlintricks
 inline fun x(crossinline func: () -> Unit) {
     val f = Runnable { func.invoke() }
 
